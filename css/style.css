@@ -1,0 +1,515 @@
+@charset "utf-8";
+
+
+
+/* div {
+    background-image: linear-gradient(
+      -45deg,
+      #d5c7ff 25%,
+      #ffffff 25%,
+      #ffffff 50%,
+      #d5c7ff 50%,
+      #d5c7ff 75%,
+      #ffffff 75%,
+      #ffffff 
+    );
+    background-size: 30px 30px;
+    background-attachment: fixed;
+    
+  }  */
+  
+
+/* アニメーション */
+/* .anim-box {
+    background: linear-gradient(to right, #362ae0 0%,#3b79cc 50%,#42d3ed 100%);
+    border-radius: 5px;
+    max-width: 400px;
+    height: 250px;
+  }
+  
+.anim-box.fadein.is-animated {
+    animation: fadein cubic-bezier(0.33, 1, 0.68, 0.1)1 forwards;
+}
+
+  @keyframes fadein {
+      0% {
+        opacity: 0;
+      }
+      100% {
+          opacity: 1;
+      }
+  } */
+ 
+/* アニメーション */
+.fade {
+    animation: SlideIn 1.6s ;
+}
+
+@keyframes SlideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(64px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/* 幼少期アニメーション */
+.img {
+    animation: fadein 1.6s ;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+        /* transform: scale(2,2) translate(-100%,100%); */
+        transform: rotate(1.0turn);
+    }
+}
+
+/* 幼少期アニメーション２ */
+.ys1 {
+    animation: fadein 2.0s ;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+        transform: rotate(1.0turn);
+    }
+}
+ 
+/* 文字色 */
+body {
+    /* margin: 0;
+    padding: 0; */
+    color: #333;
+    background-color: #ccf5f5;
+    color: #000000;
+    
+}
+
+/* リンクの基本色 */
+a {
+    color: #FF9516;
+}
+
+/* 訪問した後 */
+a:visited {
+    color: #D47D13;
+}
+
+/* マウスのせたとき */
+a:hover {
+    color: #8C530D;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover img {
+    opacity: 0.7px;
+}
+
+/* 見出しのマージン */
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+}
+
+/* 段落の初期のマージンを調整 */
+p {
+    margin-top: 0;
+    line-height: 1.6;
+}
+
+
+/* h1の装飾 */
+ .ti {
+    text-align: center;
+}
+
+/* h2の装飾 */
+#main h2 {
+    background-image: url(../header_bg.jpg);
+    padding: 30px 30px 30px 30px;
+    font-size: 26px;
+    border-bottom: solid 1px #8b7348;
+}
+
+/* h3の装飾 */
+    #main h3 {
+        font-size: 18px;
+        border-left: solid 3px #b7a077;
+        padding: 4px 9px 4px 14px;
+    }
+
+
+    /* ヘッダーの幅を決める */
+    header {
+        /* width: 980px; */
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+
+    /* ナビゲーションの基本枠 */
+    #global_tab {
+        width: 980px;
+        clear: both;
+        overflow: hidden;
+        margin: 16px auto;
+    }
+
+    /* 行頭アイコンを消す */
+    #global_tab ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* リストを横並べにする */
+    #global_tab ul li {
+        /* width: 195px; */
+        width: 244px;
+        float: left;
+        margin-right: 1px;
+        text-align: center;
+    }
+
+    /* ナビゲーションデザイン */
+    #global_tab ul li a {
+        display: block;
+        padding: 16px;
+        background-color: #6299E3;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    /* 現在地のデザインを変える */
+    #global_tab ul li.current a {
+        background-color: #3B5D8A;
+    }
+
+    #global_tab ul li a:hover {
+        background-color: #324F75;
+    }
+
+    /* フッターの基本枠の作成 */
+    footer {
+        background-color: #6299E3;
+        text-align: center;
+    }
+
+    /* フッターナビゲーションの背景色 */
+    footer #footer_tab {
+        background-color: #efefef;
+        padding: 10px 0;
+    }
+
+    /* リストの行頭アイコンを消す */
+    footer #footer_tab ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* リストを横並びにする */
+    footer #footer_tab li {
+        display: inline;
+        border-left: solid 1px #aaa;
+        margin-left: 8px;
+        padding-left: 8px;
+        font-size: smaller;
+    }
+
+    footer #footer_tab li:last-child {
+        border-right: solid 1px #aaa;
+        padding: 0 8px;
+    }
+
+    /* コピーライトを整える */
+    footer small {
+        display: block;
+        padding: 8px 0;
+        color: #fff;
+    }
+
+    /* パンくずリスト内の文字を小さくする */
+    #pankuzu {
+        font-size: smaller;
+    }
+
+    /* 行頭を消す */
+    #pankuzu ol {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* 横並べ */
+    #pankuzu ol li {
+        display: inline;
+    }
+
+    /* >をつける */
+    #pankuzu ol li::after {
+        content: ">";
+        padding-left: 7px;
+    }
+
+    #pankuzu ol li:last-child::after {
+        content: none;
+    }
+
+    #wrapper {
+        margin: 0 auto;
+        padding: 0 auto;
+    }
+/* ============================================================================================================ */
+
+
+/* かどとり */
+img {
+    border-radius: 30px;
+}
+
+/* .kanad {
+    border-radius: 30px;
+}
+
+.kanad1 {
+    border-radius: 30px;
+} */
+
+/* メインビジュアル */
+.img {
+    width: 400px;
+    height: 500px;
+    text-align: center;
+    /* margin: 0 auto; */
+}
+
+
+
+/* .img:hover {
+    width: 400px;
+    height: 500px;
+    transform: rotate(-180deg);
+} */
+
+.fade {
+    position: relative;
+}
+
+.kanad {
+    position: absolute;
+    top: 1100px;
+    left: 600px;
+}
+
+.fade {
+    position: relative;
+}
+
+.kanad1 {
+    position: absolute;
+    top: 300px;
+    left: 700px;
+}
+
+.kanad1:hover {
+    position: absolute;
+    top: 200px;
+    left: 600px;
+    width: 500px;
+    height: 500px;
+}
+
+
+/*  足立佳奈動画 */
+.kanad {
+    width: 900px;
+    height: 900px;
+}
+
+/* 足立佳奈動画2 */
+.kanad1 {
+    width: 350px;
+    height: 350px;
+}
+
+
+/* 群馬画像 */
+.gunma {
+    width: 300px;
+    height: 300px;
+}
+
+
+/* フェンシング画像 */
+.fen {
+    width: 400px;
+    height: 300px;
+}
+
+
+/* 幼少期写真 */
+.ys {
+    width: 300px;
+    height: 300px;
+}
+
+.ys1 {
+    width: 400px;
+    height: 400px;
+}
+
+
+/* バクマン写真 */
+.baku {
+    width: 300px;
+    height: 400px;
+}
+
+
+/* ドメカノ写真 */
+.dome {
+    width: 300px;
+    height: 300px;
+}
+
+
+/* いちご１００％写真 */
+.ichigo {
+    width: 300px;
+    height: 300;
+}
+
+
+/* 足立佳奈写真 */
+.adachi {
+    width: 350px;
+    height: 400px;
+}
+
+
+/* adachi足立佳奈写真 */
+.adachi1 {
+    width: 350px;
+    height: 300px;
+}
+
+.adachi1:hover {
+    width: 350px;
+    height: 300px;
+    transform: rotate(-25deg);
+}
+
+.ada1 {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    height: 200px;
+}
+
+/* .ada1:hover {
+    width: 300px;
+    height: 300px;
+} */
+
+.ada2 {
+    width: 200px;
+    height: 150px;
+}
+
+.ada3 {
+    width: 200px;
+    height: 150px;
+}
+
+.ada4 {
+    width: 200px;
+    height: 150px;
+}
+
+.ada5 {
+    width: 200px;
+    height: 200px;
+}
+
+.ada6 {
+    width: 200px;
+    height: 150px;
+}
+
+.ada7 {
+    width: 200px;
+    height: 150px;
+}
+
+.ada8 {
+    width: 200px;
+    height: 150px;
+}
+
+.ada9 {
+    width: 200px;
+    height: 150px;
+}
+
+/* アイコンけし */
+#foto ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+/* リスト項目装飾 */
+#foto ul li {
+    width: 220px;
+    /* margin: 0 30px 30px 0;
+    padding: 10px 0; */
+    /* border: solid 1px #ccc; */
+    color: #b7a077;
+    font-weight: bold;
+    box-shadow: 2px 2px 3px rgba(0,0,0,0,1);
+    overflow: hidden;
+}
+
+
+#foto ul li:nth-child(3) {
+    margin-right: 0;
+}
+
+/* 表の枠整え */
+#ada table {
+    width: 70%;
+    border-collapse: collapse;
+    margin-bottom: 16px;
+}
+
+
+/* 表の線 */
+#ada th,
+#ada td {
+    border: 1px solid #c7c7c7;
+    padding: 8px;
+}
+
+
+/* 見出しセルの装飾 */
+#ada th {
+    background-color: #f1ede4;
+    text-align: left;
+    width: 5em;
+    
+}
+
+
+
